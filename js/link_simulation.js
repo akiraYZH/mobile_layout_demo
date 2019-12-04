@@ -6,7 +6,7 @@ window.onload = function () {
     
     
     /////////////////////
-    var oSearch_bar = document.querySelector('#search_bar');
+    var oSearch_bar = document.querySelector('#search_bar_s');
     var oTags = document.querySelector('#tags');
     var oMatches = document.querySelector('#match');
 
