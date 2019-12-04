@@ -41,11 +41,12 @@ body {
                             display: inline-block;
                             width: 25%;
 
-                            // height: 357px;
+                            height: r(357px);
                             img {
                                 width: 100%;
-                                // height:357px;
-                                // object-fit: cover;
+                                height:100%;
+                                object-fit: cover;
+                                -webkit-object-fit:cover;
                             }
                         }
                     }
