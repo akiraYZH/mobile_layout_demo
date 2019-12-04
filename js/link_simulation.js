@@ -57,6 +57,7 @@ window.onload = function () {
         aLi[i].children[2].style.transformOrigin = 'top';
         aLi[i].children[2].style.transform = 'scaleY(0)';
         aLi[i].children[2].style.height = 0;
+        aLi[i].open = false;
     }
 
     oSideNav.onclick = function (ev) {
@@ -69,10 +70,18 @@ window.onload = function () {
                 aLi[i].children[2].style.transform = 'scaleY(0)';
                 aLi[i].children[2].style.height = 0;
                 aLi[i].children[1].style.transform = 'rotate(0)';
+                
+            }
+            if(option.parentNode.open){
+                for (i = 0; i < aLi.length; i++) {
+                    aLi[i].open = false;
+                }
+                return;
             }
             option.parentNode.children[2].style.transform = 'scaleY(1)';
             option.parentNode.children[2].style.height = 'auto';
-            option.parentNode.children[1].style.transform = 'rotate(90deg)'
+            option.parentNode.children[1].style.transform = 'rotate(90deg)';
+            option.parentNode.open = true;
         }
 
 
