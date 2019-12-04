@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+@import '_reset';
+@import '_common';
+
+$index_color:#b20000;
+$font_color:#323232;
+$icon_color:#c5c5c5;
+$body_bgc:#f5f5f5;
+$ff:microsoft yahei;
+
+@function r($px) {
+    @return $px/50px*1rem;
+}
+
+.web {
+    section {
+
+        .kv {
+            // margin-top: r(10px);
+            width: 100%;
+            height: r(357px);
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .sub {
+                width: 100%;
+                height: r(92px);
+                background-color: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                bottom: 0;
+                font-size: 0;
+                padding: 0 r(30px);
+                box-sizing: border-box;
+
+                .banner_title {
+                    display: inline-block;
+                    margin: r(15px) 0;
+
+
+                    h3 {
+                        font-size: r(26px);
+                        color: white;
+                        line-height: r(26px);
+                    }
+
+
+                }
+
+                .banner_info {
+
+                    p {
+                        text-align: right;
+                        display: inline-block;
+                        font-size: r(16px);
+                        color: white;
+
+                        i {
+                            margin-right: r(5px);
+
+                            &:not(:first-of-type) {
+                                margin-left: r(22px);
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .post_box {
+            padding: 0;
+            background-color: $body_bgc;
+
+            .course_box {
+                width: 100%;
+                padding: r(30px);
+                box-sizing: border-box;
+                background-color: #fff;
+                margin-top: r(30px);
+
+                .row {
+                    width: 100%;
+                    margin-bottom: r(15px);
+                    &:last-of-type{
+                        border-bottom: r(1px) solid $body_bgc;
+                        padding-bottom: r(10px);
+                    }
+                    .teacher_info {
+                        font-size: 0;
+
+                        .teacher_img {
+                            width: r(60px);
+                            height: r(60px);
+                            background-color: #898989;
+                            border-radius: 50%;
+                            margin-right: r(17px);
+                        }
+
+                        div {
+                            display: inline-block;
+                            vertical-align: middle;
+
+                            h3 {
+                                font-size: r(28px);
+                                color: $icon_color;
+                                line-height: r(28px);
+                            }
+
+                            p {
+                                font-size: r(18px);
+                                color: $icon_color;
+                            }
+                        }
+                    }
+
+                    .enroll {
+                        display: inline-block;
+                        width: r(230px);
+                        height: r(60px);
+                        background-color: $index_color;
+                        color: white;
+                        text-align: center;
+                        font-size: r(28px);
+                        line-height: r(60px);
+
+                        i {
+                            margin-left: r(15px);
+                        }
+                    }
+
+                    .course_title {
+                        font-size: r(25px);
+                        color: $font_color;
+                        line-height: r(25px);
+                        // padding-top: r(5px);
+                    }
+                    .course_date{
+                        font-size: r(16px);
+                        color: $font_color;
+                        line-height: r(16px);
+                        margin-top: r(9px);
+                    }
+                }
+
+
+                .course_img{
+                    width:100%;
+                    height:r(435px);
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@import '_reset';
+@import '_common';
+
+$index_color:#b20000;
+$font_color:#323232;
+$icon_color:#c5c5c5;
+$body_bgc:#f5f5f5;
+$ff:microsoft yahei;
+
+@function r($px) {
+    @return $px/50px*1rem;
+}
+
+.web {
+    section {
+
+        .kv {
+            margin-top: r(10px);
+            width: 100%;
+            height: r(357px);
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .sub {
+                width: 100%;
+                height: r(92px);
+                background-color: rgba(0, 0, 0, 0.6);
+                position: absolute;
+                bottom: 0;
+                font-size: 0;
+
+                .banner_title {
+                    display: inline-block;
+                    position: absolute;
+                    left: r(28px);
+                    bottom: r(15px);
+
+                    h3 {
+                        font-size: r(26px);
+                        color: white;
+                        line-height: r(26px);
+                    }
+
+                    p {
+                        font-size: r(22px);
+                        color: white;
+                        line-height: r(26px);
+                    }
+                }
+                .banner_info{
+                    position: absolute;
+                    right: r(28px);
+                    bottom: r(15px);
+                    p{
+                        text-align: right;
+                        display: inline-block;
+                        font-size: r(18px);
+                        color:white;
+                        i{
+                            margin-right: r(5px);
+                            margin-left: r(15px);
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+        .post_box {
+            .source{
+                width:100%;
+                padding: r(23px) 0;
+                font-size: 0;
+                .img_box{
+                    display: inline-block;
+                    width:r(210px);
+                    height:r(140px);
+                    img{
+                        width:100%;
+                        height:100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .source_info{
+                    display: inline-block;
+                    width: r(370px);
+                    height:r(140px);
+                    padding-left: r(15px);
+                    box-sizing: border-box;
+                    vertical-align: top;
+                    position: relative;
+                    h3{
+                        color:black;
+                        font-size: r(26px);
+                        line-height: r(26px);
+                        
+                    }
+                    p{
+                        font-size: r(22px);
+                        color:#e5e5e5;
+                        
+                    }
+                    .date{
+                        font-size: r(18px);
+                        color:#939393;
+                        line-height: r(18px);
+                        
+                        text-align: right;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        i{
+                            margin-right: r(5px);
+                            margin-left: r(15px);
+                            vertical-align: baseline;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
