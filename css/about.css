@@ -671,7 +671,7 @@ section article {
           height: 2.2rem;
           border-right: 0.08rem solid #d9e2e4;
           position: absolute;
-          left: 0.84rem;
+          left: 0.86rem;
           top: 0; }
       section article table tr:not(:first-of-type):nth-of-type(odd) {
         background-color: #f3f3f3; }
