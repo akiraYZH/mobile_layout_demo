@@ -277,7 +277,11 @@ body {
                     box-sizing: border-box;
                     background-color: #fff;
                     margin-bottom: r(15px);
-                    height: r(256px);
+                    // height: r(256px);
+
+                    m{
+                        color:$index_color;
+                    }
 
                     h3 {
                         font-size: r(26px);
